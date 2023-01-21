@@ -17,13 +17,13 @@
     <script src="script.js" defer ></script>
 </head>
 <body>
-<!-- 
-    Preload
+
+    <!-- Preload -->
     <div class="preload">
         <h2 data-text="&nbsp;》Hackathon...&nbsp;">&nbsp;》HackAthon...&nbsp;</h2>
     </div>
-    Preload
--->
+    <!-- Preload -->
+
     <!-- Navbar -->
     <nav id="navbar">
         <div class="container">
@@ -253,13 +253,6 @@
         </div>
     </section>
     <!-- Mentor & Jury -->
-
-
-    <!-- About Hackthon -->
-    <section id="">
-        <h1>About</h1>
-    </section>
-    <!-- About Hackthon -->
 
 
     <!-- Kenapa harus join Hackathon -->
@@ -688,11 +681,6 @@
             </div>
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
 <!-- Powered and Organized by -->
     <section id="pao-section">
@@ -729,7 +717,6 @@
             </div>
         </div>
     </section>
-
 <!-- Powered and Organized by -->
 
 
@@ -751,11 +738,5 @@
             </div>
     </section>
     <!-- Footer -->
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 </body>
 </html>
