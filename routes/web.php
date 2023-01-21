@@ -30,6 +30,22 @@ Route::get('/timeline', function () {
     return view('timeline');
 })->middleware(['auth', 'verified'])->name('timeline');
 
+Route::get('/add_member', function () {
+    return view('add_member');
+})->middleware(['auth', 'verified'])->name('add_member');
+
+Route::get('/cv', function () {
+    return view('cv');
+})->middleware(['auth', 'verified'])->name('cv');
+
+Route::get('/flazz_card', function () {
+    return view('flazz_card');
+})->middleware(['auth', 'verified'])->name('flazz_card');
+
+Route::get('/id_card', function () {
+    return view('id_card');
+})->middleware(['auth', 'verified'])->name('id_card');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

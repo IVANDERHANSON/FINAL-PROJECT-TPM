@@ -52,9 +52,9 @@
                 <div class="login-btn">
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline" style="font-size: 20px">Dashboard</a>
+                            <a href="{{ url('/dashboard') }}">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline" style="font-size: 20px">Log in</a>
+                            <a href="{{ route('login') }}">Log in</a>
                         @endauth
                     @endif
                 </div>
@@ -263,8 +263,67 @@
 
 
     <!-- Kenapa harus join Hackathon -->
-    <section id="">
-        <h1>Reason</h1>
+    <section id="reson-section">
+        <div class="container">
+            <div class="head">
+                <h1>Why You Should Join Us?</h1>
+            </div>
+            <div class="boxtop">
+                <div class="box">
+                    <div class="card">
+                        <div class="judul">
+                            <h1>Melakukan Mentoring dengan Para Ahli</h1>
+                        </div>
+                        <div class="isi">
+                            <h2>Kamu berkesempatan melakukan mentoring bisnis, desain, dan teknologi langsung dari orang-orang yang berpengalaman di bidang IT serta memberikan masukan tentang proyekmu.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="judul">
+                            <h1>Menambah Value pada CV</h1>
+                        </div>
+                        <div class="isi">
+                            <h2>Dengan menyelesaikan case study yang diberikan, kamu dapat menambah value CV kamu, lho!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="judul">
+                            <h1>Mendapatkan Peluang Wawancara Kerja</h1>
+                        </div>
+                        <div class="isi">
+                            <h2>CV pemenang Hackathon 5.0 akan didistribusikan ke perusahaan sponsor Hackathon 5.0.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxbtm">
+                <div class="box">
+                    <div class="card">
+                        <div class="judul">
+                            <h1>Menambah Relasi</h1>
+                        </div>
+                        <div class="isi">
+                            <h2>Kamu berkesempatan untuk menjalin relasi secara online dengan peserta, mentor, dan juri Hackathon 5.0.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="judul">
+                            <h1>Mengembangkan Keterampilan</h1>
+                        </div>
+                        <div class="isi">
+                            <h2>Perlombaan ini mendorongmu untuk mengembangkan keterampilan. Selain itu, kamu dituntut untuk membuat produk inovatif berdasarkan kasus tertentu.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
     </section>
     <!-- Kenapa harus join Hackathon -->
 
@@ -369,8 +428,8 @@
                         <img src="/assets/Timeline/1.png" alt="img-TL">
                     </div>
                     <div class="title">
-                        <h3>Day 1 - Virtual Conference</h3>
-                        <p>Jumat, 25 Juni 2023</p>
+                        <h3>Open Registration</h3>
+                        <p>Senin, 12 Juni 2023</p>
                     </div>
                 </div>
                 <div class="day2">
@@ -378,8 +437,8 @@
                         <img src="/assets/Timeline/2.png" alt="img-TL">
                     </div>
                     <div class="title">
-                        <h3>Day 2 - Hackaton 6.0</h3>
-                        <p>Sabtu, 26 Juni 2023</p>
+                        <h3>Close Registration</h3>
+                        <p>Minggu, 25 Juni 2023</p>
                     </div>
                 </div>
                 <div class="day3">
@@ -387,8 +446,17 @@
                         <img src="/assets/Timeline/3.png" alt="img-TL">
                     </div>
                     <div class="title">
-                        <h3>Day 3 - Developer Workshop</h3>
-                        <p>Minggu, 27 Juni 2023</p>
+                        <h3>Technical Meeting</h3>
+                        <p>Selasa, 27 Juni 2023</p>
+                    </div>
+                </div>
+                <div class="day4">
+                    <div class="frame">
+                        <img src="/assets/Timeline/4.png" alt="img-TL">
+                    </div>
+                    <div class="title">
+                        <h3>Competition Day</h3>
+                        <p>Jumat, 30 Juni 2023</p>
                     </div>
                 </div>
             </div>
@@ -467,8 +535,79 @@
 
 
     <!-- Other Event -->
-    <section id="">
-        <h1>Other Event</h1>
+    <section id="event-section">
+        <div class="container">
+            <div class="header">
+                <h1>Other Event</h1>
+            </div>
+            <div class="box">
+                <div class="sub-head">
+                    <h2>Virtual Conference</h2>
+                    <h3>Register Here!</h3>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slide-btn">
+                        <img class="prev" onclick="plusSlide(-1)" src="/assets/Mentor/left.png" alt="left-btn">
+                    </div>
+    
+                    <div class="mySlide fade">
+                        <div class="content">
+                            <img src="/assets/Other Event/1.png" alt="Event1">
+                        </div>
+                    </div>
+                    
+                    <div class="mySlide fade">
+                        <div class="content">
+                            <img src="/assets/Other Event/2.png" alt="Event2">
+                        </div>
+                    </div>
+                    
+                    <div class="mySlide fade">
+                        <div class="content">
+                            <img src="/assets/Other Event/3.png" alt="Event3">
+                        </div>
+                    </div>
+    
+                    <div class="slide-btn">
+                        <img class="next" onclick="plusSlide(1)" src="/assets/Mentor/right.png" alt="right-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sub-head">
+                    <h2>Developer Workshop</h2>
+                    <h3>Register Here!</h3>
+                </div>
+                <div class="slideshow-container">
+                    <div class="slide-btn">
+                        <img class="prev" onclick="plusSlidez(-1)" src="/assets/Mentor/left.png" alt="left-btn">
+                    </div>
+    
+                    <div class="mySlidez fade">
+                        <div class="content">
+                            <img src="/assets/Other Event/dw/1.png" alt="Event1">
+                        </div>
+                    </div>
+                    
+                    <div class="mySlidez fade">
+                        <div class="content">
+                            <img src="/assets/Other Event/dw/2.png" alt="Event2">
+                        </div>
+                    </div>
+                    
+                    <div class="mySlidez fade">
+                        <div class="content">
+                            <img src="/assets/Other Event/dw/3.png" alt="Event3">
+                        </div>
+                    </div>
+    
+                    <div class="slide-btn">
+                        <img class="next" onclick="plusSlidez(1)" src="/assets/Mentor/right.png" alt="right-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Other Event -->
 
@@ -549,15 +688,49 @@
             </div>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-
-
-
-    <!-- Sosial Media -->
-    <section id="">
-        <h1>Sosmed</h1>
+<!-- Powered and Organized by -->
+    <section id="pao-section">
+        <div class="container">
+            <div class="kiri">
+                <div class="bncc">
+                    <h1>Organized By</h1>
+                    <div class="bncclogo">
+                        <img src="/assets/Logo/BNCC.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="kanan">
+                <div class="atas">
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="Masukan Email Anda">
+                        <input type="button" class="btn" value="Subscibe Sekarang!">
+                    </div>
+                </div>
+                <div class="bawah">
+                        <div class="gojek">
+                            <h1>Official Learning Partner of</h1>
+                                <div class="gojeklogo">
+                                    <img src="/assets/Sponsor/1.png" alt="">
+                                </div>
+                        </div>
+                            <div class="tiket">
+                                <h1>Official Empowering Affiliate of</h1>
+                                <div class="tiketlogo">
+                                    <img src="/assets/Sponsor/2.png" alt="">
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- Sosial Media -->
+
+<!-- Powered and Organized by -->
 
 
     <!-- Footer -->
