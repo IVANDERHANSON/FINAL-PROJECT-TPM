@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" enctype="multipart/form-data" action="{{ route('register') }}">
         @csrf
 
         <h2 style="font-size: 30px; text-align: center;">Group Information</h2>
@@ -77,7 +77,7 @@
 
         <!-- Github/Gitlab ID -->
         <div>
-            <x-input-label for="github" :value="__('Github/Gitlab ID')" />
+            <x-input-label for="github" :value="__('Github / Gitlab ID')" />
             <x-text-input id="github" class="block mt-1 w-full" type="text" name="github" :value="old('github')" required autofocus />
             <x-input-error :messages="$errors->get('github')" class="mt-2" />
         </div>

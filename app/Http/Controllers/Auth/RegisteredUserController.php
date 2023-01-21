@@ -53,6 +53,21 @@ class RegisteredUserController extends Controller
             'id_card' => 'mimes:pdf,jpg,jpeg,png'
         ]);
 
+        $extension = $request->file('cv')->getClientOriginalExtension();
+        // $filename = $request->file('Image')->getClientOriginalName();
+        $filename = $request->name.'_'.$request->leader_name.'.'.$extension;
+        $request->file('cv')->storeAs('/public/cv/', $filename);
+
+        $extension = $request->file('flazz_card')->getClientOriginalExtension();
+        // $filename = $request->file('Image')->getClientOriginalName();
+        $filename = $request->name.'_'.$request->leader_name.'.'.$extension;
+        $request->file('flazz_card')->storeAs('/public/flazz_card/', $filename);
+
+        $extension = $request->file('id_card')->getClientOriginalExtension();
+        // $filename = $request->file('Image')->getClientOriginalName();
+        $filename = $request->name.'_'.$request->leader_name.'.'.$extension;
+        $request->file('id_card')->storeAs('/public/id_card/', $filename);
+
         $user = User::create([
             'name' => $request->name,
             'password' => Hash::make($request->password),
@@ -64,9 +79,9 @@ class RegisteredUserController extends Controller
             'github' => $request->github,
             'birth_place' => $request->birth_place,
             'birth_date' => $request->birth_date,
-            'cv' => $request->cv,
-            'flazz_card' => $request->flazz_card,
-            'id_card' => $request->id_card
+            'cv' => $filename,
+            'flazz_card' => $filename,
+            'id_card' => $filename
         ]);
 
         event(new Registered($user));
